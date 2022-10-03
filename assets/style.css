@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.col-half {
+    width: 48%;
+}
+
+.col {
+    width: 100%;
+}
+
+.left-fl {
+    float: left;
+}
+
+.right-fl {
+    float: right;
+}
+
+.left-ta {
+    text-align: left;
+}
+
+.right-ta {
+    text-align: right;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#header>#nav>li>a {
+    text-transform: uppercase;
+}
+
+#header #nav {
+    display: inline-block;
+    padding: 0;
+}
+
+#header .search-bt {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-bt .seacrh-icon {
+    color: #fff;
+    line-height: 46px;
+}
+
+#header .search-bt:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#nav>li:hover {
+    background-color: #ccc;
+}
+
+#nav>li {
+    display: inline-block;
+    line-height: 46px;
+    padding: 0 24px;
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+    cursor: pointer;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#nav li:hover a {
+    display: block;
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav li:hover {
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0px;
+    box-shadow: 0px 0px 10px #333;
+}
+
+#nav .subnav li {
+    list-style: none;
+    padding: 0px 40px 0px 20px;
+}
+
+#header #nav i {
+    position: relative;
+    padding-left: 4px;
+    font-size: 12px;
+    bottom: 2px;
+}
+
+#slider {
+    position: relative;
+    top: -46px;
+    left: 0;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(./img/slider.jpg) left top / cover no-repeat;
+}
+
+#slider .text-slider {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-slider p {
+    margin: 10px 0 66px;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+#slider .text-slider h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#content {
+    position: relative;
+    top: -46px;
+}
+
+#content .about {
+    padding: 64px 14px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .about h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 20px 20px;
+    letter-spacing: 4px;
+}
+
+#content .about .sub {
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .about .content-ab {
+    text-align: justify;
+    font-size: 14.8px;
+    line-height: 1.5;
+
+}
+
+.about .mem-list {
+    text-align: center;
+    margin-top: 47px;
+    padding-bottom: 32px;
+}
+
+.mem-list .mem {
+    float: left;
+    width: 33.33333%;
+
+}
+
+.mem img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+.mem p {
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+.tour-date {
+    background-color: #000;
+    padding-bottom: 96px;
+}
+
+.tour-date .about h2 {
+    color: #fff;
+}
+
+.tour-date .about p {
+    color: #ccc;
+    margin-bottom: 40px !important;
+}
+
+.sticket-list {
+    color: #757575;
+    background-color: #fff;
+    font-size: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.sticket-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 11px 16px;
+}
+
+.sticket-list span {
+    background-color: #f44336;
+    color: #fff;
+    padding: 4px 6px;
+    margin-left: 15px;
+
+}
+
+.sticket-list .slot {
+    float: right;
+    border-radius: 50%;
+    background-color: #000;
+    padding: 4px 9px;
+    margin: -5px 20px;
+}
+
+.place-list {
+    text-align: center;
+    margin-top: -32px;
+}
+
+.place-body {
+    display: inline-block;
+    margin: 0 7px;
+    background-color: #fff;
+    width: 245px;
+}
+
+.place-body img {
+    width: 245px;
+    display: block;
+    background-color: #000;
+}
+.place-body .img {
+    background-color: #000;
+}
+.place-body img:hover {
+    background-color: rgba(0,0,0,1);
+    opacity:0.6;
+    cursor:pointer;
+}
+
+.place-body .body-content {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.place-body .body-content .place-heading {
+    font-size: 15px;
+    margin: 15px 0;
+
+}
+
+.place-body .body-content .place-time {
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.6;
+
+}
+
+.place-body .body-content .content {
+    margin: 15px 0;
+}
+
+.place-bt {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 8px;
+    background-color: #000;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.place-body .body-content .place-bt:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.tickets-modal.open {
+    display: flex;
+}
+
+.tickets-modal {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.tickets-modal .tickets-container {
+    position: relative;
+    background-color: #fff;
+    min-width: 60%;
+    top: -100px;
+    animation: animation ease .6s;
+}
+
+.tickets-modal .tickets-container .ti-close {
+    position: absolute;
+    color: #fff;
+    font-weight: 200;
+    top: 0px;
+    right: 0px;
+    padding: 8px;
+    opacity: 0.9;
+}
+
+.tickets-modal .tickets-container .ti-close:hover {
+    background-color: #f44336;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.tickets-container .tickets-header {
+    color: #fff;
+    font-size: 30px;
+    background-color: #009688;
+    padding: 60px 16px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.tickets-container .tickets-header .ti-briefcase {
+    margin-right: 15px;
+}
+
+.tickets-container .tickets-body {
+    padding: 0 16px;
+}
+
+.tickets-body .tickets-header-ip {
+    display: block;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.tickets-body .ti-shopping-cart {
+    margin-right: 5px;
+}
+
+.tickets-body .ti-user {
+    margin-right: 5px;
+}
+
+
+.tickets-body .tickets-ip {
+    width: 100%;
+    margin: 5px 0 -5px;
+    border: 1px solid #ccc;
+    height: 40px;
+}
+
+.tickets-body .tickets-buy {
+    display: block;
+    color: #fff;
+    background-color: #009688;
+    text-align: center;
+    padding: 16px;
+    margin-top: 20px;
+    opacity: 1;
+}
+
+.tickets-body .ti-check {
+    font-size: 13px;
+    font-weight: 900;
+    font-style: inherit;
+    margin: -4px;
+}
+
+.tickets-body .tickets-buy:hover {
+    opacity: 0.9;
+}
+
+.tickets-container .tickets-footer {
+    font-size: 15px;
+    text-align: right;
+    padding: 30px 10px 10px;
+}
+
+.tickets-footer .help {
+    color: #2196F3;
+}
+
+@keyframes animation {
+    from {
+        transform: translateY(-200px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+
+}
+
+.contact-body {
+    position: relative;
+    padding: 32px 0;
+
+}
+
+.contact-body .contact-content {
+    color: #000;
+}
+
+.contact-body .contact-content i {
+    letter-spacing: 5px;
+    font-size: 18px;
+}
+
+.contact-body .contact-content p {
+    font-size: 18px;
+}
+
+.contact-box .contact-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.contact-body::after{
+    display:block;
+    content:"";
+    clear:both;
+}
+.contact-box .contact-send {
+    display:block;
+    color: #fff;
+    background-color: #000;
+    font-size: 17px;
+    padding: 9px 12px;
+    margin: 16px 0;
+    text-transform: uppercase;
+}
+.contact-box .contact-send:hover{
+    color:#000;
+    background-color:rgba(0, 0, 0, 0.3);
+    cursor:pointer;
+}
+#footer {
+    text-align: center;
+    font-size: 15px;
+    color:rgba(0, 0, 0, 0.6);
+    margin: 32px 16px 64px;
+}
+
+#footer .copy-right {
+    margin: 15px 0;
+}
+.copy-right a {
+    color:rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    font-size: 24px;
+}
+#footer .copy-right a:hover {
+    opacity: 0.5;
+}
+#footer .by{
+    text-align: center;
+    font-size: 15px;
+    color:rgba(0, 0, 0, 0.6);
+    padding-bottom: 35px;
+}
