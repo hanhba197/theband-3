@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/havicomicon.png">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
 </head>
@@ -16,31 +17,43 @@
         <div id="header">
             <!-- star nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
+                <li><a class="js-close-menu home" href="#">Home</a></li>
 
-                <li><a href="">Band</a></li>
+                <li><a class=" band" href="#band">Band</a></li>
 
-                <li><a href="">Tour</a></li>
+                <li><a class="tour" href="#tour">Tour</a></li>
 
-                <li><a href="">Contact</a></li>
+                <li><a class="contact" href="#contact">Contact</a></li>
 
                 <li>
-                    <a href="#">More<i class="ti-angle-down"></i></a>
+                    <a class="more" href="#">More<i class="ti-angle-down"></i></a>
                     <ul class="subnav">
                         <li>Merchandise</li>
                         <li>Etras</li>
                         <li>Media</li>
                     </ul>
                 </li>
-
-
             </ul>
+
             <!-- end nav -->
             <div class="search-bt">
                 <i class="seacrh-icon ti-search"></i>
             </div>
-            <!-- star search  -->
+            <!-- end search  -->
+            <!-- star menu  -->
 
+            <div class="menu-bt ti-menu js-openmenu">
+
+            </div>
+
+            <ul class="list-menu menu">
+                <li class="js-close-menu magrin-t menu"><a class="band" href="#band">Band</a></li>
+                <li><a class="js-close-menu tour" href="#tour">Tour</a></li>
+                <li><a class="js-close-menu contact" href="#contact">Contact</a></li>
+                <li><a class="js-close-menu merch" href="#">Merch</a></li>
+                <div class="test-close js-close-menu"></div>
+            </ul>
+            
         </div>
 
 
@@ -54,9 +67,10 @@
         </div>
 
 
-        <div id="content">
+        <div id="content" class="js-close-menu">
 
             <div class="about">
+                <div id="band" class="fixcroll"></div>
                 <h2>THE BAND</h2>
                 <p class="sub">We love music</p>
                 <p class="content-ab">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
@@ -88,6 +102,7 @@
             <div class="tour-date">
 
                 <div class="about">
+                    <div id="tour" class="fixcroll"></div>
                     <h2>TOUR DATES</h2>
                     <p class="sub">Remember to book your tickets!</p>
 
@@ -104,12 +119,12 @@
 
                     <div class="place-body">
 
-                        <div class="img" ><img src="./assets/img/place1.jpg" alt=""></div>
+                        <div class="img"><img src="./assets/img/place1.jpg" alt=""></div>
                         <div class=" body-content">
                             <h2 class="place-heading">New York</h2>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn place-bt js-buy-tickets">Buy Tickets</button>
+                            <button class="place-bt js-buy-tickets">Buy Tickets</button>
 
                         </div>
 
@@ -121,7 +136,7 @@
                             <h2 class="place-heading">Paris</h2>
                             <p class="place-time">Sat 28 Nov 2016</p>
                             <p class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn place-bt js-buy-tickets">Buy Tickets</button>
+                            <button class="place-bt js-buy-tickets">Buy Tickets</button>
 
                         </div>
 
@@ -133,7 +148,7 @@
                             <h2 class="place-heading">San Francisco</h2>
                             <p class="place-time">Sun 29 Nov 2016</p>
                             <p class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn place-bt js-buy-tickets">Buy Tickets</button>
+                            <button class="place-bt js-buy-tickets">Buy Tickets</button>
 
                         </div>
 
@@ -144,7 +159,8 @@
 
             </div>
             <div class="about">
-                <h2>CONTACT</h2>
+                <div id="contact" class="fixcroll"></div>
+                <h2 id="contact">CONTACT</h2>
                 <p class="sub">Fan? Drop a note!</p>
 
                 <div class="contact-body">
@@ -156,22 +172,22 @@
                     </div>
 
                     <div class="contact-box col-half right-fl">
-                       <form acction="">
-                        <input class="contact-input left-fl col-half" type="text" placeholder="Name" required>
-                        <input class="contact-input right-fl col-half" type="email" placeholder="Email" required>
-                        <input class="contact-input right-fl col" type="text" placeholder="Message" required>
-                        <input class="contact-send right-fl" type="submit" Value="SEND"></input>
-                       </form>
-                       
+                        <form acction="">
+                            <input class="contact-input left-fl col-half" type="text" placeholder="Name" required>
+                            <input class="contact-input right-fl col-half" type="email" placeholder="Email" required>
+                            <input class="contact-input right-fl col" type="text" placeholder="Message" required>
+                            <input class="contact-send right-fl" type="submit" Value="SEND"></input>
+                        </form>
+
                     </div>
-                    
+
                 </div>
 
             </div>
             <div><img src="./assets/img/map.jpg" width="100%" alt="map"></div>
         </div>
 
-        <div id="footer">
+        <div id="footer" class="close-menu">
             <div class="copy-right">
                 <a href="#"><i class="ti-facebook"></i></a>
                 <a href="#"><i class="ti-instagram"></i></a>
@@ -180,7 +196,7 @@
                 <a href="#"><i class="ti-twitter"></i></a>
                 <a href="#"><i class="ti-linkedin"></i></a>
             </div>
-        <p>Powered by <a class="by" href="#">w3.css</a></p>
+            <p>Powered by <a class="by" href="#">w3.css</a></p>
         </div>
 
     </div>
@@ -213,6 +229,7 @@
     </div>
     </div>
     <script>
+        // --open-close-buy-ticket--
         const buyBtns = document.querySelectorAll('.js-buy-tickets')
         const modal = document.querySelector('.js-modal')
         const closebt = document.querySelector('.js-close')
@@ -234,6 +251,28 @@
         container.addEventListener('click', function (event) {
             event.stopPropagation()
         })
+
+
+        // --open-close-menu--
+
+        const menu = document.querySelector('.js-openmenu')
+        const addmenu = document.querySelector('.list-menu')
+        const closealls = document.querySelectorAll('.js-close-menu')
+
+        menu.addEventListener('click', openmenu)
+        for (const closeall of closealls) {
+            closeall.addEventListener('click', closem)
+        }
+
+        function openmenu() {
+            addmenu.classList.add('open')
+        }
+        function closem() {
+            addmenu.classList.remove('open')
+        }
+
+
+
     </script>
 
 </body>
